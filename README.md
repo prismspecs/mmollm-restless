@@ -6,7 +6,7 @@ A mock interaction across two perspectives. This is what the thing looks like fr
 
 ## SCENE 1: LOGIN
 
-Person A opens the client. Terminal-style interface, because anything else would be pretending this is simpler than it is.
+Person A opens the client. Terminal-style interface, a throwback to BBS systems, and because this is how people tend to engage with Claude Code, etc.
 
 ```
 MMOLLM v0.3.1
