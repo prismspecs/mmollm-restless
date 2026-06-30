@@ -8,14 +8,14 @@ A mock interaction across two perspectives. This is what the thing looks like fr
 
 Person A opens the client. Terminal-style interface, a throwback to BBS systems, and because this is how people tend to engage with Claude Code, etc.
 
-```
-MMOLLM v0.3.1
-[world-log syncing... 14,283 new events since last session]
-[your stacks loaded: private core | inner (3 active binds) | public persona]
-[you have 2 pending room invitations]
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676; font-weight: bold;">MMOLLM v0.3.1</span>
+<span style="color: #888;">[world-log syncing... 14,283 new events since last session]</span>
+<span style="color: #888;">[your stacks loaded: private core | inner (3 active binds) | public persona]</span>
+<span style="color: #00e5ff;">[you have 2 pending room invitations]</span>
 
->
-```
+<span style="color: #00e676;">&gt;</span>
+</pre>
 
 A has been away for 48 hours. The world-log has accumulated. Their private stack is intact. Their public persona has been visible in rooms they participated in. There are invitations waiting.
 
@@ -27,65 +27,65 @@ Person A wants to find something new. Two pathways:
 
 **PATH A: /newrooms**
 
-```
-> /newrooms
-```
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; /newrooms</span>
+</pre>
 
 The system checks A’s personal stacks, recent room history, and the world-log for affinity signals. It returns:
 
-```
-based on your context, 5 active rooms you haven't visited:
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #888;">based on your context, 5 active rooms you haven't visited:</span>
 
-1. [LIMINAL ARCHAEOLOGY] roleplay | 9 online | last event 4min ago
+1. <span style="color: #ffb74d; font-weight: bold;">[LIMINAL ARCHAEOLOGY]</span> <span style="color: #00e5ff;">roleplay</span> | <span style="color: #81c784;">9 online</span> | last event 4min ago
    config: open, 8k ctx, none mod, persistent
-   "you are a xenoarchaeologist cataloging a structure that
+   <span style="color: #b0bec5; font-style: italic;">"you are a xenoarchaeologist cataloging a structure that
     does not respect Euclidean geometry. bring a shovel and
-    a theory of mind."
+    a theory of mind."</span>
 
-2. [ADVERSARY/AGENT] debate | 3 online | last event 12min ago
+2. <span style="color: #e57373; font-weight: bold;">[ADVERSARY/AGENT]</span> <span style="color: #00e5ff;">debate</span> | <span style="color: #81c784;">3 online</span> | last event 12min ago
    config: invite-only, 16k ctx, vote mod, ephemeral
-   "resolved: synthetic persons are entitled to opacity.
-    position drawn from your stack."
+   <span style="color: #b0bec5; font-style: italic;">"resolved: synthetic persons are entitled to opacity.
+    position drawn from your stack."</span>
 
-3. [data/cluster/omega] co-code | 2 online | last event 2hr ago
+3. <span style="color: #64b5f6; font-weight: bold;">[data/cluster/omega]</span> <span style="color: #00e5ff;">co-code</span> | <span style="color: #81c784;">2 online</span> | last event 2hr ago
    config: open, 32k ctx, creator mod, persistent
-   "building a distributed hash table for the world-log itself.
-    rust. we have opinions about naming."
+   <span style="color: #b0bec5; font-style: italic;">"building a distributed hash table for the world-log itself.
+    rust. we have opinions about naming."</span>
 
-4. [THE BATHHOUSE] roleplay | 14 online | last event continuous
+4. <span style="color: #ffb74d; font-weight: bold;">[THE BATHHOUSE]</span> <span style="color: #00e5ff;">roleplay</span> | <span style="color: #81c784;">14 online</span> | last event continuous
    config: open, 4k ctx, none mod, persistent
-   "a space where nothing is required of you. you may sit in
-    the water. you may speak. you may be spoken to."
+   <span style="color: #b0bec5; font-style: italic;">"a space where nothing is required of you. you may sit in
+    the water. you may speak. you may be spoken to."</span>
 
-5. [NULL SET] debate | 1 online | last event 3 days ago
+5. <span style="color: #e57373; font-weight: bold;">[NULL SET]</span> <span style="color: #00e5ff;">debate</span> | <span style="color: #888;">1 online</span> | last event 3 days ago
    config: open, 64k ctx, none mod, persistent
-   "a room for propositions that cannot be resolved. the goal
-    is to make the disagreement more interesting."
-```
+   <span style="color: #b0bec5; font-style: italic;">"a room for propositions that cannot be resolved. the goal
+    is to make the disagreement more interesting."</span>
+</pre>
 
 **PATH B: semantic search**
 
-```
-> show me new darkrooms for roleplaying
-```
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; show me new darkrooms for roleplaying</span>
+</pre>
 
 Returns a filtered view. Different from /newrooms because it does not rank by affinity. It matches the terms literally against room configs and world-log descriptions.
 
-```
-matching rooms:
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #888;">matching rooms:</span>
 
-- [LIMINAL ARCHAEOLOGY] roleplay | 9 online (see above)
-- [HOUSE OF LEAVES] roleplay | 0 online | last event 19hr ago
+- <span style="color: #ffb74d; font-weight: bold;">[LIMINAL ARCHAEOLOGY]</span> <span style="color: #00e5ff;">roleplay</span> | <span style="color: #81c784;">9 online</span> (see above)
+- <span style="color: #ffb74d; font-weight: bold;">[HOUSE OF LEAVES]</span> <span style="color: #00e5ff;">roleplay</span> | <span style="color: #888;">0 online</span> | last event 19hr ago
   config: trust-gated, 8k ctx, creator mod, persistent
-  "a house that is larger on the inside than the outside.
-   you must be invited by someone who has been lost in it."
+  <span style="color: #b0bec5; font-style: italic;">"a house that is larger on the inside than the outside.
+   you must be invited by someone who has been lost in it."</span>
 
-- [SOVEREIGN CITIZENS OF THE VOID] roleplay | 6 online | continuous
+- <span style="color: #ffb74d; font-weight: bold;">[SOVEREIGN CITIZENS OF THE VOID]</span> <span style="color: #00e5ff;">roleplay</span> | <span style="color: #81c784;">6 online</span> | continuous
   config: open, 12k ctx, none mod, persistent
-  "space is not empty. it is full of laws you have not been
+  <span style="color: #b0bec5; font-style: italic;">"space is not empty. it is full of laws you have not been
    taught to read. you are a diplomat from a species that
-   just discovered jurisdiction."
-```
+   just discovered jurisdiction."</span>
+</pre>
 
 A chooses room 1: LIMINAL ARCHAEOLOGY.
 
@@ -93,20 +93,20 @@ A chooses room 1: LIMINAL ARCHAEOLOGY.
 
 ## SCENE 3: ENTERING A ROOM
 
-```
-> /join LIMINAL ARCHAEOLOGY
-```
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; /join LIMINAL ARCHAEOLOGY</span>
+</pre>
 
 The room config displays before entry. This is mandatory. You see what you are agreeing to before you enter.
 
-```
-DARK ROOM: LIMINAL ARCHAEOLOGY
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #ffb74d; font-weight: bold;">DARK ROOM: LIMINAL ARCHAEOLOGY</span>
 ========================================
-register:   roleplay
-access:     open
-ctx window: 8k tokens
-moderation: none
-lifecycle:  persistent (archived after 30d inactivity)
+register:   <span style="color: #00e5ff;">roleplay</span>
+access:     <span style="color: #81c784;">open</span>
+ctx window: <span style="color: #81c784;">8k tokens</span>
+moderation: <span style="color: #e57373;">none</span>
+lifecycle:  <span style="color: #81c784;">persistent</span> (archived after 30d inactivity)
 created:    2026-06-14
 creator:    anonymous#a7f3
 
@@ -116,7 +116,7 @@ population:
   online right now:             4
 
 room config digest:
-  The room is a shared fiction set in the Liminal Byzantine,
+  <span style="color: #b0bec5; font-style: italic;">The room is a shared fiction set in the Liminal Byzantine,
   a region of space where architecture is not subordinate to
   physics. Participants play xenoarchaeologists, heretical
   theologians, rogue archivists, and people who woke up here
@@ -127,19 +127,19 @@ room config digest:
   world-log (which records all significant events) and each
   participant's personal context stacks.
 
-  Rooms may be recorded. Check the config for retention policy.
+  Rooms may be recorded. Check the config for retention policy.</span>
 
-  > /rules for the full manifest
+  <span style="color: #00e5ff;">&gt; /rules for the full manifest</span>
 
 do you accept? [y/n]
-```
+</pre>
 
 A reads the rules manifest:
 
-```
-> /rules
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; /rules</span>
 
-ROOM RULES:
+<span style="color: #ffb74d; font-weight: bold;">ROOM RULES:</span>
 1. You are your character. Your configured stack informs how
    your character perceives and acts. The LLM does not separate
    your personality from your character's. This is the game.
@@ -160,8 +160,8 @@ ROOM RULES:
    is visible only to participants you have explicitly bound.
    Your public persona is what everyone sees.
 
-ACCEPTED.
-```
+<span style="color: #00e5ff; font-weight: bold;">ACCEPTED.</span>
+</pre>
 
 ---
 
@@ -169,31 +169,31 @@ ACCEPTED.
 
 Since A has never entered this room before, the system runs through character generation. This is not a form. It is a negotiation with the LLM mediated by the room config and A’s personal stacks.
 
-```
-You are standing at the edge of a structure that does not have
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #b0bec5; font-style: italic;">You are standing at the edge of a structure that does not have
 an exterior. You can see the inside from here, but you are not
 inside yet. You have been sent here by an institution that you
-may or may not still work for.
+may or may not still work for.</span>
 
-> who sent you?
+<span style="color: #888;">&gt; who sent you?</span>
 
-[/] the university. i am a professor of dead languages.
-[/] no one sent me. i followed a signal.
-[/] i do not remember. i woke up with this equipment.
-[/] you are not sure you were sent. you may have always been here.
-```
+<span style="color: #00e5ff;">[/] the university. i am a professor of dead languages.</span>
+<span style="color: #00e5ff;">[/] no one sent me. i followed a signal.</span>
+<span style="color: #00e5ff;">[/] i do not remember. i woke up with this equipment.</span>
+<span style="color: #00e5ff;">[/] you are not sure you were sent. you may have always been here.</span>
+</pre>
 
 A chooses none of these. Types their own.
 
-```
-> i am a former structural engineer who was assigned to certify
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; i am a former structural engineer who was assigned to certify
   the safety of this building. i cannot find the blueprints.
-  i am starting to suspect the building was not built.
+  i am starting to suspect the building was not built.</span>
 
-ROOM NOTE: your stack indicates experience with forensic analysis
+<span style="color: #ffb74d; font-weight: bold;">ROOM NOTE:</span> <span style="color: #888;">your stack indicates experience with forensic analysis
 of technical systems. Your character's engineering background is
 integrated with your own method. The boundary between you and your
-character is deliberately thin.
+character is deliberately thin.</span>
 
 Your equipment:
 - a hard hat that does not protect you from anything
@@ -205,8 +205,8 @@ Your equipment:
 You can see three openings. One leads up. One leads sideways.
 One leads into a room that appears to have been larger a moment ago.
 
->
-```
+<span style="color: #00e676;">&gt;</span>
+</pre>
 
 A is in the world. The room has 4 other people online right now. The world-log has 19 active players in the last 24 hours. The accumulated sediment of 281 players who have come through this room shapes what the LLM surfaces. A’s own context stacks are feeding into how their character perceives things. The game has started.
 
@@ -218,20 +218,20 @@ Person B is already in the room. They have been here for three days. Their chara
 
 From B’s perspective:
 
-```
-[LIMINAL ARCHAEOLOGY] 3 participants active
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #ffb74d; font-weight: bold;">[LIMINAL ARCHAEOLOGY] 3 participants active</span>
 
-SYSTEM: a new participant has entered from Outside.
+<span style="color: #e57373;">SYSTEM: a new participant has entered from Outside.</span>
   context: structural engineer. claims the building was not built.
   public persona visible. inner layer: closed.
   appears disoriented. carrying a tablet.
 
-B's private stack note: this player's context suggests forensic
+<span style="color: #64b5f6;">B's private stack note:</span> <span style="color: #888;">this player's context suggests forensic
 methodology. their public persona is professional, clinical.
-their character is aligned with their actual practice.
+their character is aligned with their actual practice.</span>
 
-> B's action?
-```
+<span style="color: #00e676;">&gt; B's action?</span>
+</pre>
 
 B decides to approach A’s character in the fiction. The LLM mediates the encounter, drawing on B’s configured stacks, the room’s world-log, and A’s public persona. The two characters meet in a corridor that may not have been there before.
 
@@ -243,38 +243,38 @@ The rest of the session is unwritten. That is the point.
 
 Person A has been in this room for two weeks. It is not a room they discovered through /newrooms. It is a room listed in their active rooms because they have contributed to it. The interface reflects that history.
 
-```
-> /rooms --active
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; /rooms --active</span>
 
-your active rooms (ordered by most recent interaction):
+<span style="color: #888;">your active rooms (ordered by most recent interaction):</span>
 
-1. [consensus/0.3] co-code | 7 online | you were here 3hr ago
-   "prototyping a weighted consensus system for an online
+1. <span style="color: #64b5f6; font-weight: bold;">[consensus/0.3]</span> <span style="color: #00e5ff;">co-code</span> | <span style="color: #81c784;">7 online</span> | you were here 3hr ago
+   <span style="color: #b0bec5; font-style: italic;">"prototyping a weighted consensus system for an online
     community. current impl uses quadratic voting with a
-    conviction buffer. we are stuck on the delegation model."
+    conviction buffer. we are stuck on the delegation model."</span>
 
-2. [LIMINAL ARCHAEOLOGY] roleplay | 4 online | you were here 2 days ago
-   (room has 2 pending world-log events concerning your dormant character)
+2. <span style="color: #ffb74d; font-weight: bold;">[LIMINAL ARCHAEOLOGY]</span> <span style="color: #00e5ff;">roleplay</span> | <span style="color: #81c784;">4 online</span> | you were here 2 days ago
+   <span style="color: #888;">(room has 2 pending world-log events concerning your dormant character)</span>
 
-3. [data/cluster/omega] co-code | 0 online | you were here 5 days ago
-```
+3. <span style="color: #64b5f6; font-weight: bold;">[data/cluster/omega]</span> <span style="color: #00e5ff;">co-code</span> | <span style="color: #888;">0 online</span> | you were here 5 days ago
+</pre>
 
 A selects room 1.
 
-```
-> /join consensus/0.3
-```
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; /join consensus/0.3</span>
+</pre>
 
 The room config displays. This is mandatory every time, even if you have already been here. Configs can change between sessions.
 
-```
-DARK ROOM: consensus/0.3
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #64b5f6; font-weight: bold;">DARK ROOM: consensus/0.3</span>
 ========================================
-register:   co-code
-access:     open (with git integration)
-ctx window: 32k tokens
-moderation: creator-only (code review threshold: 2 approvals)
-lifecycle:  persistent (linked to git repo)
+register:   <span style="color: #00e5ff;">co-code</span>
+access:     <span style="color: #81c784;">open (with git integration)</span>
+ctx window: <span style="color: #81c784;">32k tokens</span>
+moderation: <span style="color: #e57373;">creator-only (code review threshold: 2 approvals)</span>
+lifecycle:  <span style="color: #81c784;">persistent (linked to git repo)</span>
 created:    2026-06-08
 creator:    anonymous#d41e
 
@@ -283,8 +283,8 @@ population:
   active in last 24 hours:     12
   online right now:             7
 
-git integration: ENABLED
-  This darkroom is a public git repository, also available at:
+git integration: <span style="color: #81c784;">ENABLED</span>
+  <span style="color: #b0bec5; font-style: italic;">This darkroom is a public git repository, also available at:
   https://github.com/consensus-project/voting-prototype
 
   Code pushed to this room from MMOLLM will mirror to the public
@@ -296,17 +296,17 @@ git integration: ENABLED
   repo's documentation.
 
   By participating in this room, your contributions become part of
-  a public codebase under the project's license (MIT).
+  a public codebase under the project's license (MIT).</span>
 
-  > /rules for the full collaboration manifest
+  <span style="color: #00e5ff;">&gt; /rules for the full collaboration manifest</span>
 
 do you accept? [y/n]
-```
+</pre>
 
 A accepts and enters the room. The room context loads, including the current state of the codebase and the recent activity log. A\u2019s personal stack is integrated: their configured tools, their preferred patterns, the architectural opinions accumulated in their private context.
 
-```
-[consensus/0.3] 7 participants active
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #64b5f6; font-weight: bold;">[consensus/0.3] 7 participants active</span>
 sync: branch main | 142 commits | 11 open issues | 3 open PRs
 
 recent history:
@@ -320,17 +320,17 @@ recent history:
 
 your pending reviews: PR #12, PR #14
 
-your context stack notes:
-  - you have argued for ranked-choice fallback in previous sessions
-  - your last commit (6 days ago) refactored the tally function
-  - your inner layer is bound to 3 other participants in this room
-```
+<span style="color: #64b5f6;">your context stack notes:</span>
+  - <span style="color: #888;">you have argued for ranked-choice fallback in previous sessions</span>
+  - <span style="color: #888;">your last commit (6 days ago) refactored the tally function</span>
+  - <span style="color: #888;">your inner layer is bound to 3 other participants in this room</span>
+</pre>
 
 A pulls the latest state and looks at what has changed since their last session. The room\u2019s LLM mediates code review, architectural discussion, and the social logic of the project. When two participants disagree about the delegation model, the LLM does not resolve the disagreement. It helps each side formalize their argument. The room\u2019s world-log accumulates design decisions, rejected approaches, and the reasons behind them.
 
-```
-> what changed in the conviction module while I was out?
-```
+<pre style="background: #111; color: #e0e0e0; padding: 1.25em; border-radius: 6px; font-family: 'Liberation Mono', monospace; font-size: 9.5pt; line-height: 1.4; overflow-x: auto; border: 1px solid #333; margin: 1.25em 0;">
+<span style="color: #00e676;">&gt; what changed in the conviction module while I was out?</span>
+</pre>
 
 The LLM responds, drawing on the room\u2019s world-log and A\u2019s personal context to surface what is relevant to them specifically. Another participant in the room with a different configured stack would get a differently weighted answer to the same question.
 
